@@ -8,7 +8,7 @@ pipeline {
                 
                 sh 'docker-compose version'
                 //sh 'sudo chmod a+rwx'
-                sh 'docker-compose up'
+                sh 'sudo docker-compose up'
                 // sh 'docker version'
             }
         }

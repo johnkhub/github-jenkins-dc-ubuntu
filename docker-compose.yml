@@ -35,7 +35,7 @@ services:
       - POSTGRES_USER=csx-d
       - POSTGRES_PASSWORD=csx-d
     ports:
-      - "8080:8080"
+      - "8081:8081"
     links:
       - csx-d-postgres
 

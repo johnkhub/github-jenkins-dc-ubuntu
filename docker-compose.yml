@@ -27,7 +27,7 @@ services:
     #The docker file in scrum-app build the jar and provides the docker image with the following name.
     build: ./csx-server
     container_name: csx-d-app
-
+    restart: always
     #Environment variables for Spring Boot Application.
     environment:
       - DB_SERVER=csx-d-postgres
@@ -35,7 +35,7 @@ services:
       - POSTGRES_USER=csx-d
       - POSTGRES_PASSWORD=csx-d
     ports:
-      - "8080:8080"
+      - "8090:8080"
     links:
       - csx-d-postgres
 
